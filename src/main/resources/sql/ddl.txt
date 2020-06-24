@@ -1,0 +1,29 @@
+create table member(
+	id varchar(20) NOT NULL,
+	password int,
+	name varchar(20),
+	nickname varchar(20),
+	PRIMARY KEY (id)
+
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+drop table member;
+
+create table food(
+
+	seq int NOT NULL,
+	title varchar(200),
+	image varchar(200),
+	content varchar(500),
+	regDate date,
+	viewCount int,
+	comment varchar(200),
+	likes int,
+	PRIMARY KEY (seq)
+	
+	)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+drop table food;
+
+select * from member;
+select * from food;
